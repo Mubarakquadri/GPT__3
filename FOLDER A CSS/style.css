@@ -317,13 +317,25 @@
 Questions
 ===============
 */
+.Faq {
+  text-transform: capitalize;
+  background-image:  linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5rem;
+}
 
 .section-center {
-  width: 90%;
+ width: 100%;
   margin: auto;
+  max-width: 50%;
+
 }
 .question {
-  background: rgb(201, 186, 186);
+  background: rgb(204, 183, 183) ;
   border-radius: 14px;
   box-shadow: 15px;
   padding: 1.5rem 1.5rem 0 1.5rem;
@@ -339,8 +351,9 @@ Questions
 
 .question-title p {
   margin-bottom: 0;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   color: black;
+  font-size: 1.3rem;
 }
 .question-btn {
   font-size: 1.8rem;
@@ -359,6 +372,7 @@ Questions
 }
 .question-text p {
   margin-bottom: 0;
+  font-size: 12px;
 }
 /* hide text */
 .question-text {
@@ -375,4 +389,94 @@ Questions
 }
 .show-text .plus-icon {
   display: none;
+}
+
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  padding: 10rem 0;
+  border-top: 1px solid #eee;
+  margin-top: 8rem;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+  /* color: rgb(204, 183, 183); */
+  color: white
+
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  text-transform: capitalize;
+  /* background-image:  linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  -webkit-background-clip: text;
+  color: transparent; */
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+  color: white;
+  /* color: rgb(204, 183, 183); */
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  /* color: rgb(204, 183, 183); */
+  color: white;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: rgb(204, 183, 183); 
 }
