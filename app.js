@@ -85,3 +85,11 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+
+
+window.addEventListener('load', function() {
+  let loadingContainer = document.getElementById('loading-container');
+  loadingContainer.style.display = 'none';
+});
+
