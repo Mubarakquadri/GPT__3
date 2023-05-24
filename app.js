@@ -68,28 +68,33 @@ allLinks.forEach(function (link) {
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
-function checkFlexGap() {
-  var flex = document.createElement("div");
-  flex.style.display = "flex";
-  flex.style.flexDirection = "column";
-  flex.style.rowGap = "1px";
+// function checkFlexGap() {
+//   var flex = document.createElement("div");
+//   flex.style.display = "flex";
+//   flex.style.flexDirection = "column";
+//   flex.style.rowGap = "1px";
 
-  flex.appendChild(document.createElement("div"));
-  flex.appendChild(document.createElement("div"));
+//   flex.appendChild(document.createElement("div"));
+//   flex.appendChild(document.createElement("div"));
 
-  document.body.appendChild(flex);
-  var isSupported = flex.scrollHeight === 1;
-  flex.parentNode.removeChild(flex);
-  console.log(isSupported);
+//   document.body.appendChild(flex);
+//   var isSupported = flex.scrollHeight === 1;
+//   flex.parentNode.removeChild(flex);
+//   console.log(isSupported);
 
-  if (!isSupported) document.body.classList.add("no-flexbox-gap");
-}
-checkFlexGap();
+//   if (!isSupported) document.body.classList.add("no-flexbox-gap");
+// }
+// checkFlexGap();
 
+let loadingContainer = document.getElementById('loading-container');
+const showContent = document.querySelector('.display')
 
 
 window.addEventListener('load', function() {
-  let loadingContainer = document.getElementById('loading-container');
-  loadingContainer.style.display = 'none';
+ setTimeout(() => {
+  showContent.classList.add('show')
+  loadingContainer.style.visibility = 'hidden';
+ }, 3000)
+ loadingContainer.style.visibility = 'visible';
 });
 
