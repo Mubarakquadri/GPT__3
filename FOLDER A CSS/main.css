@@ -26,6 +26,9 @@ body {
   overflow-x: hidden;
 }
 
+li{
+  list-style: none;
+}
 
 
 /**************************/
