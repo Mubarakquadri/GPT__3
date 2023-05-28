@@ -24,7 +24,9 @@ body {
   background: #040C18;
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
+  
 }
+
 
 li{
   list-style: none;

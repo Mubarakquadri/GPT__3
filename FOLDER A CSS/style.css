@@ -13,6 +13,9 @@
 .logo {
   height: 2.2rem;
 }
+#margin {
+  margin-left: 1.5rem;
+}
 
 /************************************/
 /*  LOADING STATE*/
